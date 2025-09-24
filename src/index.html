@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Suivi des Candidatures</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    select {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenue sur le système de suivi des candidatures</h1>
+  <form action="login.php" method="POST">
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="password" name="mot_de_passe" placeholder="Mot de passe" required />
+    <select name="type">
+      <option value="candidat">Candidat</option>
+      <option value="recruteur">Recruteur</option>
+    </select>
+    <button type="submit">Connexion</button>
+  </form>
+</body>
+</html>
